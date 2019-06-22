@@ -1,0 +1,25 @@
+{
+  "name": "nodecardtrick",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrandonGreet/Card_Trick_Tut.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrandonGreet/Card_Trick_Tut/issues"
+  },
+  "homepage": "https://github.com/BrandonGreet/Card_Trick_Tut#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.2.7"
+  }
+}
