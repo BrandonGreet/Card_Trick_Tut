@@ -38,7 +38,7 @@ app.post('/secret', (request, response) => {
 					response.send('Inserted into database');
 				}
 			});
-			db.close();
+			clientDB.close();
 		}
 	});
 });
@@ -88,7 +88,7 @@ app.get('/:param*', (request, response) => {
 					respond.sendStatus(404);
 				}
 
-				db.close();
+				clientDB.close();
 			})
 		}
 	});
