@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const mongodb = require('mongodb');
 const MongoClient = mongodb.MongoClient;
 const url = process.env.MONGODB_URI || 'mongodb://localhost/database';
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 const DB_NAME = process.env.DB_NAME;
 
 // Body parser setup
