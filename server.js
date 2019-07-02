@@ -22,7 +22,7 @@ app.post('/secret', (request, response) => {
 	// Connects to the database and creates a new entry, or prints out an error
 	MongoClient.connect(url, {useNewUrlParser: true}, (err, clientDB) => {
 		if (err) {
-			console.log(error);
+			console.log(err);
 		} else {
 			const db = clientDB.db(DB_NAME);
 			const collection = db.collection('names');
@@ -85,7 +85,7 @@ app.get('/:param*', (request, response) => {
 					const card = result[result.length-1].card + '.png';
 					response.sendFile(path.join(__dirname+'/cards/'+card));
 				} else {
-					respond.sendStatus(404);
+					response.sendStatus(404);
 				}
 
 				clientDB.close();
